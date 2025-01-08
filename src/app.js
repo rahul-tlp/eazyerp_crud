@@ -1,8 +1,8 @@
 
-var express = require('express');
-var indexWebRouter = require('./router/index');
+let express = require('express');
+let indexWebRouter = require('./router/index');
 require('dotenv').config()
-var app = express();
+let app = express();
 const cors = require('cors');
 app.use(cors());
 

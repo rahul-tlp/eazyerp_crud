@@ -3,8 +3,8 @@ module.exports = {
         {
             name: 'eazyErp',
             script: './dist/app.js',
-            instances: 'max',
-            exec_mode: 'cluster',
+            // instances: 'max',
+            // exec_mode: 'cluster', To enable cluster mode uncomment this
             watch: true,
             env: {
                 NODE_ENV: process.env.NODE_ENV,
@@ -15,14 +15,6 @@ module.exports = {
                 DB_PASS: process.env.DATABASE_PASSWORD,
                 DB_NAME: process.env.DATABASE
             },
-            // env_production: {
-            //     NODE_ENV: 'production',
-            //     PORT: process.env.PORT || 8080,
-            // },
-            // env_development: {
-            //     NODE_ENV: 'development',
-            //     PORT: process.env.PORT || 3000,
-            // },
         },
     ],
 };

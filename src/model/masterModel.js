@@ -6,7 +6,6 @@ Master.productCount = async (postData) => {
   try {
     let queryString =
       "SELECT COALESCE(COUNT(id), 0) AS totalCount From master_product where status=:status";
-    console.log("queryString", queryString);
 
     let queryStringValues = {
       status: postData.status,

@@ -14,31 +14,30 @@ Master.productCount = /*#__PURE__*/function () {
         case 0:
           _context.prev = 0;
           queryString = "SELECT COALESCE(COUNT(id), 0) AS totalCount From master_product where status=:status";
-          console.log("queryString", queryString);
           queryStringValues = {
             status: postData.status,
             limit: postData.limit,
             offset: postData.start
           };
-          _context.next = 6;
+          _context.next = 5;
           return queryConnection.parametrisedQuery(queryString, "select", queryStringValues);
-        case 6:
+        case 5:
           result = _context.sent;
           data = {};
           if (result.length) {
             data = result[0].totalcount;
           }
           return _context.abrupt("return", data);
-        case 12:
-          _context.prev = 12;
+        case 11:
+          _context.prev = 11;
           _context.t0 = _context["catch"](0);
           console.log("error", _context.t0);
           throw new Error(_context.t0);
-        case 16:
+        case 15:
         case "end":
           return _context.stop();
       }
-    }, _callee, null, [[0, 12]]);
+    }, _callee, null, [[0, 11]]);
   }));
   return function (_x) {
     return _ref.apply(this, arguments);

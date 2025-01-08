@@ -4,9 +4,10 @@
   "description": "completing task given by EasyErp",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.js",
-    "build": "babel src -d dist"
-  },
+  "build": "babel src -d dist",
+  "start": "nodemon src/app.js",
+  "pm2-start": "pm2 start ecosystem.config.js --env production"
+},
   "author": "rahul rathore",
   "license": "ISC",
   "dependencies": {
