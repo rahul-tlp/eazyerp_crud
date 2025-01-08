@@ -33,7 +33,7 @@ Ensure you have the following installed on your system:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/rahul-tlp/eazyerp_crud.git
+git clone https://github.com/mr-rahul-rathore/eazyerp_crud.git
 cd eazyerp_crud
  ```
 
